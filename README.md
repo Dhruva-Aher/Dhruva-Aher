@@ -34,7 +34,7 @@
       <p>A lightweight, Redis-compatible in-memory data store in Go implementing the RESP networking protocol over raw TCP in a Unix/Linux environment. Achieved 75K+ ops/sec with sub-millisecond P95 latency across concurrent TCP clients.</p>
       <p><em>75K+ ops/sec · Sub-millisecond P95 latency · goroutines & sync.RWMutex</em></p>
       <p><code>Go</code> <code>TCP</code> <code>RESP Protocol</code> <code>Concurrent Systems</code> <code>Linux</code></p>
-      <a href="https://github.com/Dhruva-Aher/RedisLite">→ View Repository</a>
+      <a href="https://github.com/Dhruva-Aher/redislite">→ View Repository</a>
       <br><br>
     </td>
     <td width="50%" valign="top">
@@ -80,7 +80,7 @@
         <p>Built and deployed a GitHub Marketplace app performing automated code reviews via parallel workers and Redis-backed async queue; outputs structured, ranked feedback with per-installation rate limiting.</p>
         <p><em>GitHub Marketplace app · Decoupled webhook queue · Docker Compose CI/CD</em></p>
         <p><code>Python</code> <code>Redis</code> <code>SQLite</code> <code>Docker</code> <code>GitHub Actions</code></p>
-        <a href="https://github.com/Dhruva-Aher/PRBeliefs">→ View Repository</a>
+        <a href="https://github.com/Dhruva-Aher/ReviewAgent">→ View Repository</a>
         <br><br>
       </td>
     </tr>

@@ -131,7 +131,7 @@
     </g>
 
     <!-- Node 1: RedisLite -->
-    <a xlink:href="https://github.com/Dhruva-Aher/RedisLite" target="_blank">
+    <a xlink:href="https://github.com/Dhruva-Aher/redislite" target="_blank">
       <g transform="translate(35, 95)">
         <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg cycle-border-1 hover-border" />
         <rect width="4" height="30" rx="2" fill="#4F8CFF" x="15" y="17.5" opacity="0.7" />
@@ -200,7 +200,7 @@
     </a>
 
     <!-- Node 2: PRBeliefs -->
-    <a xlink:href="https://github.com/Dhruva-Aher/PRBeliefs" target="_blank">
+    <a xlink:href="https://github.com/Dhruva-Aher/ReviewAgent" target="_blank">
       <g transform="translate(35, 175)">
         <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg hover-border" />
         <rect width="4" height="30" rx="2" fill="#a371f7" x="15" y="17.5" opacity="0.7" />
