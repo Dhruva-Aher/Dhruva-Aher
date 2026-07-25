@@ -21,7 +21,7 @@
 
 <div align="center">
   <h2>Featured Projects</h2>
-  <p><em>Selected works in distributed systems, infrastructure, and applied AI</em></p>
+  <p><em>Selected works in distributed systems, AI platforms, and cloud infrastructure</em></p>
 </div>
 
 <br>
@@ -31,19 +31,19 @@
     <td width="50%" valign="top">
       <br>
       <h3>◆ RedisLite</h3>
-      <p>A lightweight, Redis-compatible in-memory key-value store built from scratch. Implements the RESP protocol, supports TTL-based expiry, and handles concurrent clients with an event-driven architecture.</p>
-      <p><em>Full RESP protocol compliance · Sub-millisecond operations · Event-driven I/O</em></p>
-      <p><code>Go</code> <code>TCP</code> <code>RESP Protocol</code> <code>Concurrency</code></p>
+      <p>A lightweight, Redis-compatible in-memory data store in Go implementing the RESP networking protocol over raw TCP in a Unix/Linux environment. Achieved 75K+ ops/sec with sub-millisecond P95 latency across concurrent TCP clients.</p>
+      <p><em>75K+ ops/sec · Sub-millisecond P95 latency · goroutines & sync.RWMutex</em></p>
+      <p><code>Go</code> <code>TCP</code> <code>RESP Protocol</code> <code>Concurrent Systems</code> <code>Linux</code></p>
       <a href="https://github.com/Dhruva-Aher/RedisLite">→ View Repository</a>
       <br><br>
     </td>
     <td width="50%" valign="top">
       <br>
       <h3>◆ Aura</h3>
-      <p>A distributed task scheduling and orchestration system with fault-tolerant job execution, priority queues, and real-time monitoring dashboard.</p>
-      <p><em>Fault-tolerant execution · Priority scheduling · Real-time monitoring</em></p>
-      <p><code>Python</code> <code>Redis</code> <code>PostgreSQL</code> <code>WebSocket</code></p>
-      <a href="https://github.com/Dhruva-Aher/Aura">→ View Repository</a>
+      <p>A distributed task orchestration platform supporting priority scheduling, crash recovery, and Redis-backed concurrent worker coordination across 20,000+ queued tasks, sustaining 300 jobs/min at P95 latency of 6.5s.</p>
+      <p><em>20,000+ queued tasks · Heartbeat crash recovery · 250 unit tests</em></p>
+      <p><code>Node.js</code> <code>PostgreSQL</code> <code>Redis</code> <code>Docker</code></p>
+      <a href="https://github.com/Dhruva-Aher/Aura">→ View Repository</a> · <a href="https://aurasys.vercel.app">⚡ Live Demo</a>
       <br><br>
     </td>
   </tr>
@@ -51,18 +51,18 @@
     <td width="50%" valign="top">
       <br>
       <h3>◆ JusticeQueue</h3>
-      <p>AI-powered legal case management system that uses NLP to prioritize cases, extract key information, and provide intelligent recommendations for legal workflows.</p>
-      <p><em>NLP-driven prioritization · Intelligent case routing · 40% efficiency improvement</em></p>
-      <p><code>Python</code> <code>FastAPI</code> <code>OpenAI</code> <code>PostgreSQL</code> <code>React</code></p>
-      <a href="https://github.com/Dhruva-Aher/JusticeQueue">→ View Repository</a>
+      <p>Designed a 13-step NLP and IR pipeline using LLM tool calling on GCP Vertex AI to analyze legal documents, retrieve semantically similar cases, and generate structured recommendations with explainable reasoning.</p>
+      <p><em>13-step NLP/IR pipeline · Vertex AI Gemini Pro/Flash · text-embedding-004</em></p>
+      <p><code>Next.js 14</code> <code>GCP Vertex AI</code> <code>MongoDB Atlas</code> <code>Gemini API</code> <code>Upstash Redis</code></p>
+      <a href="https://github.com/Dhruva-Aher/JusticeQueue">→ View Repository</a> · <a href="https://justicequeuelive.vercel.app">⚡ Live Demo</a>
       <br><br>
     </td>
     <td width="50%" valign="top">
       <br>
       <h3>◆ FlowBoard</h3>
-      <p>Real-time collaborative kanban board with live cursor tracking, optimistic updates, and conflict resolution for distributed teams.</p>
-      <p><em>Real-time sync · CRDT conflict resolution · Live collaboration</em></p>
-      <p><code>TypeScript</code> <code>Next.js</code> <code>WebSocket</code> <code>Redis</code></p>
+      <p>Architected a multi-tenant project management SaaS platform with isolated workspaces, role-based access control, JWT authentication, and real-time collaborative editing over WebSockets.</p>
+      <p><em>Multi-tenant RBAC · WebSockets real-time sync · TanStack Query & Zustand</em></p>
+      <p><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code> <code>WebSockets</code></p>
       <a href="https://github.com/Dhruva-Aher/FlowBoard">→ View Repository</a>
       <br><br>
     </td>
@@ -77,9 +77,9 @@
       <td align="center" valign="top">
         <br>
         <h3>◆ PRBeliefs</h3>
-        <p>Intelligent pull request review assistant that analyzes code changes, detects patterns, and provides contextual review suggestions using ML models.</p>
-        <p><em>Pattern detection · Contextual suggestions · CI/CD integration</em></p>
-        <p><code>Python</code> <code>Tree-sitter</code> <code>FastAPI</code> <code>GitHub API</code></p>
+        <p>Built and deployed a GitHub Marketplace app performing automated code reviews via parallel workers and Redis-backed async queue; outputs structured, ranked feedback with per-installation rate limiting.</p>
+        <p><em>GitHub Marketplace app · Decoupled webhook queue · Docker Compose CI/CD</em></p>
+        <p><code>Python</code> <code>Redis</code> <code>SQLite</code> <code>Docker</code> <code>GitHub Actions</code></p>
         <a href="https://github.com/Dhruva-Aher/PRBeliefs">→ View Repository</a>
         <br><br>
       </td>
@@ -95,19 +95,19 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=go,python,java,cpp,typescript,javascript&theme=dark" alt="Languages" />
+<img src="https://skillicons.dev/icons?i=go,python,java,c,javascript,typescript,postgres,bash&theme=dark" alt="Languages" />
 
 <br><br>
 
-**Backend & Infrastructure**
+**AI, Systems & Backend**
 
-<img src="https://skillicons.dev/icons?i=redis,postgres,mongodb,docker,kubernetes,kafka&theme=dark" alt="Backend" />
+<img src="https://skillicons.dev/icons?i=gcp,redis,postgres,mongodb,fastapi,nodejs,docker,kubernetes&theme=dark" alt="Backend & AI" />
 
 <br><br>
 
-**Cloud & Tools**
+**Cloud & DevOps**
 
-<img src="https://skillicons.dev/icons?i=aws,gcp,git,linux,vim,graphql&theme=dark" alt="Cloud" />
+<img src="https://skillicons.dev/icons?i=aws,gcp,docker,terraform,githubactions,git,linux&theme=dark" alt="Cloud & DevOps" />
 
 <br><br>
 
@@ -138,11 +138,11 @@
 <br><br><br>
 
 <div align="center">
-  <a href="https://dhruva-aher.dev"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=safari&logoColor=4F8CFF" alt="Portfolio" /></a>
+  <a href="https://dhruvaaher.dev"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=safari&logoColor=4F8CFF" alt="Portfolio" /></a>
   &nbsp;
   <a href="https://linkedin.com/in/dhruva-aher"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=4F8CFF" alt="LinkedIn" /></a>
   &nbsp;
-  <a href="mailto:daher1@asu.edu"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=4F8CFF" alt="Email" /></a>
+  <a href="mailto:dhruvaaher48@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=4F8CFF" alt="Email" /></a>
   &nbsp;
   <a href="https://github.com/Dhruva-Aher"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=4F8CFF" alt="GitHub" /></a>
 </div>
