@@ -180,14 +180,14 @@
   <table width="900">
     <tr>
       <td align="center" fill="#161B22" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
-        <h3 style="margin-top: 0; color: #FFFFFF;">GitHub Stats &amp; Productivity</h3>
-        <p style="color: #8B949E; font-size: 13px; margin-bottom: 20px;"><em>Automatically updated metrics synced from GitHub activity</em></p>
+        <h3 style="margin-top: 0; color: #FFFFFF;">GitHub Activity &amp; Stats</h3>
+        <p style="color: #8B949E; font-size: 13px; margin-bottom: 20px;"><em>Live metrics updated on every GitHub event</em></p>
         
         <!-- ROW 1: GitHub Stats + Most Used Languages -->
         <div align="center">
-          <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F8CFF&icon_color=4F8CFF&text_color=8B949E&border_color=30363D" alt="GitHub Stats" />
+          <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4f8cff&icon_color=4f8cff&text_color=8b949e" alt="GitHub Stats" />
           &nbsp;&nbsp;
-          <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F8CFF&text_color=8B949E" alt="Most Used Languages" />
+          <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4f8cff&text_color=8b949e" alt="Most Used Languages" />
         </div>
         
         <br><br>
@@ -201,7 +201,7 @@
 
         <!-- ROW 3: Contribution Activity Graph -->
         <div align="center">
-          <img width="860" src="https://github-readme-activity-graph.vercel.app/graph?username=Dhruva-Aher&theme=github-dark&bg_color=0D1117&hide_border=true&color=4F8CFF&line=4F8CFF&point=E6EDF3" alt="Contribution Graph" />
+          <img width="860" src="https://github-readme-activity-graph.vercel.app/graph?username=Dhruva-Aher&theme=github-dark&bg_color=0d1117&hide_border=true&color=4f8cff&line=4f8cff&point=e6edf3" alt="Contribution Graph" />
         </div>
       </td>
     </tr>
