@@ -1,12 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
   <defs>
+    <!-- Border Gradient -->
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F8CFF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#30363D" />
+      <stop offset="100%" stop-color="#A371F7" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Bar Gradients -->
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ADD8" />
+      <stop offset="100%" stop-color="#4F8CFF" />
+    </linearGradient>
+
+    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A371F7" />
+      <stop offset="100%" stop-color="#FF5F57" />
+    </linearGradient>
+
+    <linearGradient id="green-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#28C840" />
+      <stop offset="100%" stop-color="#00ADD8" />
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
     <style>
-      .stat-card {
-        transition: transform 0.3s ease;
-      }
       .stat-number {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         fill: #FFFFFF;
       }
       .stat-label {
@@ -14,9 +39,6 @@
         font-size: 12px;
         fill: #8B949E;
         font-weight: 500;
-      }
-      .stat-accent {
-        fill: #4F8CFF;
       }
       .bar-bg {
         fill: #0D1117;
@@ -29,86 +51,79 @@
       @keyframes fillBar {
         from { width: 0; }
       }
-      .pulse-glow {
-        animation: pulse 3s ease-in-out infinite;
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.6; }
-        50% { opacity: 1; }
-      }
     </style>
-    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
-    </filter>
   </defs>
 
-  <!-- Background -->
+  <!-- Background Base -->
   <rect width="900" height="260" fill="#0D1117" />
 
-  <!-- LEFT PANEL: Engineering Benchmarks & Stats (420x220) -->
+  <!-- LEFT PANEL: Engineering Benchmarks -->
   <g transform="translate(30, 20)">
-    <rect width="410" height="220" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5" filter="url(#card-shadow)" />
+    <rect width="415" height="220" rx="14" fill="#161B22" stroke="url(#card-border)" stroke-width="1.5" filter="url(#card-shadow)" />
     
     <!-- Title -->
-    <text x="25" y="40" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#E6EDF3">Engineering Benchmarks</text>
-    <line x1="25" y1="52" x2="385" y2="52" stroke="#30363D" stroke-width="1" />
+    <text x="25" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#E6EDF3">Engineering Scale &amp; Benchmarks</text>
+    <line x1="25" y1="50" x2="390" y2="50" stroke="#30363D" stroke-width="1" />
 
     <!-- Stat 1: Throughput -->
-    <g transform="translate(25, 75)">
-      <text class="stat-number" font-size="24" y="20">75K+</text>
-      <text class="stat-accent" font-family="sans-serif" font-size="12" font-weight="600" x="80" y="8">OPS / SEC</text>
-      <text class="stat-label" y="22" x="80">RedisLite RESP Protocol P95 Latency &lt; 1ms</text>
+    <g transform="translate(25, 72)">
+      <rect width="70" height="34" rx="8" fill="#0D1117" stroke="#4F8CFF" stroke-width="1" />
+      <text font-family="sans-serif" font-size="15" font-weight="800" fill="#4F8CFF" text-anchor="middle" x="35" y="22">75K+</text>
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">OPS / SEC (RedisLite)</text>
+      <text class="stat-label" y="29" x="82">RESP protocol over TCP with P95 &lt; 1ms</text>
     </g>
 
     <!-- Stat 2: Queued Tasks -->
-    <g transform="translate(25, 120)">
-      <text class="stat-number" font-size="24" y="20">20,000+</text>
-      <text font-family="sans-serif" font-size="12" font-weight="600" fill="#28C840" x="125" y="8">QUEUED TASKS</text>
-      <text class="stat-label" y="22" x="125">Aura Concurrent Worker Orchestration</text>
+    <g transform="translate(25, 118)">
+      <rect width="70" height="34" rx="8" fill="#0D1117" stroke="#28C840" stroke-width="1" />
+      <text font-family="sans-serif" font-size="15" font-weight="800" fill="#28C840" text-anchor="middle" x="35" y="22">20K+</text>
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">QUEUED TASKS (Aura)</text>
+      <text class="stat-label" y="29" x="82">Redis-backed concurrent worker orchestration</text>
     </g>
 
     <!-- Stat 3: Dataset Scale -->
-    <g transform="translate(25, 165)">
-      <text class="stat-number" font-size="24" y="20">810K+</text>
-      <text font-family="sans-serif" font-size="12" font-weight="600" fill="#FEBC2E" x="100" y="8">FEMA RECORDS</text>
-      <text class="stat-label" y="22" x="100">Disaster Relief ETL &amp; Pandas Analytics Pipeline</text>
+    <g transform="translate(25, 164)">
+      <rect width="70" height="34" rx="8" fill="#0D1117" stroke="#FEBC2E" stroke-width="1" />
+      <text font-family="sans-serif" font-size="15" font-weight="800" fill="#FEBC2E" text-anchor="middle" x="35" y="22">810K+</text>
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">FEMA RECORDS (ETL)</text>
+      <text class="stat-label" y="29" x="82">Disaster relief analytics across 3,200+ counties</text>
     </g>
   </g>
 
-  <!-- RIGHT PANEL: Language & Tech Distribution (420x220) -->
-  <g transform="translate(460, 20)">
-    <rect width="410" height="220" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5" filter="url(#card-shadow)" />
+  <!-- RIGHT PANEL: Core Technology Stacks -->
+  <g transform="translate(455, 20)">
+    <rect width="415" height="220" rx="14" fill="#161B22" stroke="url(#card-border)" stroke-width="1.5" filter="url(#card-shadow)" />
     
     <!-- Title -->
-    <text x="25" y="40" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#E6EDF3">Core Technology Stacks</text>
-    <line x1="25" y1="52" x2="385" y2="52" stroke="#30363D" stroke-width="1" />
+    <text x="25" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#E6EDF3">Core Technology Stacks</text>
+    <line x1="25" y1="50" x2="390" y2="50" stroke="#30363D" stroke-width="1" />
 
-    <!-- Language 1: Go (Systems) -->
-    <g transform="translate(25, 70)">
+    <!-- Language 1: Go -->
+    <g transform="translate(25, 68)">
       <text font-family="sans-serif" font-size="13" font-weight="600" fill="#E6EDF3" y="12">Go / Systems &amp; Networking</text>
-      <text font-family="sans-serif" font-size="12" font-weight="600" fill="#4F8CFF" x="325" y="12">35%</text>
-      <rect x="0" y="20" width="360" height="8" class="bar-bg" />
-      <rect x="0" y="20" width="126" height="8" fill="#4F8CFF" class="bar-fill" />
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#4F8CFF" x="330" y="12">35%</text>
+      <rect x="0" y="20" width="365" height="8" class="bar-bg" />
+      <rect x="0" y="20" width="128" height="8" fill="url(#blue-grad)" class="bar-fill" />
     </g>
 
-    <!-- Language 2: Python / AI & Data -->
-    <g transform="translate(25, 110)">
+    <!-- Language 2: Python -->
+    <g transform="translate(25, 108)">
       <text font-family="sans-serif" font-size="13" font-weight="600" fill="#E6EDF3" y="12">Python / AI &amp; FastAPI Backends</text>
-      <text font-family="sans-serif" font-size="12" font-weight="600" fill="#a371f7" x="325" y="12">30%</text>
-      <rect x="0" y="20" width="360" height="8" class="bar-bg" />
-      <rect x="0" y="20" width="108" height="8" fill="#a371f7" class="bar-fill" />
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#A371F7" x="330" y="12">30%</text>
+      <rect x="0" y="20" width="365" height="8" class="bar-bg" />
+      <rect x="0" y="20" width="110" height="8" fill="url(#purple-grad)" class="bar-fill" />
     </g>
 
-    <!-- Language 3: TypeScript & Node.js -->
-    <g transform="translate(25, 150)">
+    <!-- Language 3: TypeScript -->
+    <g transform="translate(25, 148)">
       <text font-family="sans-serif" font-size="13" font-weight="600" fill="#E6EDF3" y="12">TypeScript &amp; React / Next.js</text>
-      <text font-family="sans-serif" font-size="12" font-weight="600" fill="#28C840" x="325" y="12">25%</text>
-      <rect x="0" y="20" width="360" height="8" class="bar-bg" />
-      <rect x="0" y="20" width="90" height="8" fill="#28C840" class="bar-fill" />
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#28C840" x="330" y="12">25%</text>
+      <rect x="0" y="20" width="365" height="8" class="bar-bg" />
+      <rect x="0" y="20" width="92" height="8" fill="url(#green-grad)" class="bar-fill" />
     </g>
 
     <!-- Footer tag -->
-    <g transform="translate(25, 190)">
+    <g transform="translate(25, 188)">
       <text font-family="sans-serif" font-size="11" fill="#8B949E" y="10">Cloud: AWS (ECS, RDS, S3) · GCP (Vertex AI, Cloud Logging)</text>
     </g>
   </g>
