@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <!-- Gradient for Neon Laptop -->
+    <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F8CFF" />
+      <stop offset="50%" stop-color="#A371F7" />
+      <stop offset="100%" stop-color="#FF5F57" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neon-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="15" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Card Shadow -->
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    
+    <style>
+      .laptop-glow {
+        animation: neonPulse 4s ease-in-out infinite;
+      }
+      @keyframes neonPulse {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 8px rgba(79, 140, 255, 0.6)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 18px rgba(163, 113, 247, 0.9)); }
+      }
+      .code-bracket {
+        animation: floatBracket 3s ease-in-out infinite;
+      }
+      @keyframes floatBracket {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="900" height="220" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.5" filter="url(#card-shadow)" />
+
+  <!-- LEFT CONTENT AREA -->
+  <g transform="translate(35, 35)">
+    <!-- Section Title -->
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" y="20">About Me</text>
+    
+    <!-- Bio Text -->
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#8B949E" y="52" width="560">
+      Computer Science @ Arizona State University (2025–2028).
+    </text>
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#8B949E" y="74">
+      I build high-performance distributed systems, backend infrastructure, and AI applications.
+    </text>
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#8B949E" y="96">
+      Passionate about low-latency key-value stores, task orchestration, and LLM pipelines.
+    </text>
+
+    <!-- Status Bullet Points -->
+    <g transform="translate(0, 125)">
+      <circle cx="6" cy="6" r="4" fill="#4F8CFF" />
+      <text font-family="sans-serif" font-size="13" font-weight="600" fill="#E6EDF3" x="18" y="10">Currently Building:</text>
+      <text font-family="sans-serif" font-size="13" font-weight="600" fill="#4F8CFF" x="155" y="10">RedisLite · Aura · JusticeQueue</text>
+    </g>
+
+    <g transform="translate(0, 150)">
+      <circle cx="6" cy="6" r="4" fill="#28C840" />
+      <text font-family="sans-serif" font-size="13" font-weight="600" fill="#E6EDF3" x="18" y="10">Looking For:</text>
+      <text font-family="sans-serif" font-size="13" font-weight="600" fill="#28C840" x="118" y="10">Summer 2027 Software Engineering Internship</text>
+    </g>
+  </g>
+
+  <!-- RIGHT NEON LAPTOP GRAPHIC -->
+  <g transform="translate(710, 35)" class="laptop-glow">
+    <!-- Laptop Screen Outer Frame -->
+    <rect x="0" y="0" width="130" height="90" rx="8" fill="none" stroke="url(#neon-grad)" stroke-width="3" filter="url(#neon-glow)" />
+    
+    <!-- Laptop Screen Inner Border -->
+    <rect x="6" y="6" width="118" height="78" rx="4" fill="#0D1117" opacity="0.9" />
+
+    <!-- Code Symbol inside Screen </ > -->
+    <g transform="translate(32, 28)" class="code-bracket">
+      <!-- Left Angle Bracket < -->
+      <path d="M12,8 L2,18 L12,28" fill="none" stroke="url(#neon-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Slash / -->
+      <path d="M24,32 L34,4" fill="none" stroke="url(#neon-grad)" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Right Angle Bracket > -->
+      <path d="M46,8 L56,18 L46,28" fill="none" stroke="url(#neon-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Laptop Base / Keyboard Hinge -->
+    <path d="M-20,96 L150,96 C153,96 155,98 154,101 L146,112 C145,114 142,116 138,116 L-8,116 C-12,116 -15,114 -16,112 L-24,101 C-25,98 -23,96 -20,96 Z" 
+          fill="none" stroke="url(#neon-grad)" stroke-width="3" filter="url(#neon-glow)" />
+    
+    <!-- Laptop Notch -->
+    <rect x="50" y="96" width="30" height="5" rx="2" fill="url(#neon-grad)" />
+  </g>
+</svg>
