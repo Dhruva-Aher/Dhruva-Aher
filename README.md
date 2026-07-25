@@ -175,28 +175,63 @@
 
 <br><br>
 
-<!-- SECTION 5: ENGINEERING METRICS CARD -->
+<!-- SECTION 5: AUTOMATICALLY UPDATING GITHUB STATS & METRICS -->
+<div align="center">
+  <table width="900">
+    <tr>
+      <td align="center" fill="#161B22" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+        <h3 style="margin-top: 0; color: #FFFFFF;">GitHub Stats &amp; Productivity</h3>
+        <p style="color: #8B949E; font-size: 13px; margin-bottom: 20px;"><em>Automatically updated metrics synced from GitHub activity</em></p>
+        
+        <!-- ROW 1: GitHub Stats + Most Used Languages -->
+        <div align="center">
+          <img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F8CFF&icon_color=4F8CFF&text_color=8B949E&border_color=30363D" alt="GitHub Stats" />
+          &nbsp;&nbsp;
+          <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F8CFF&text_color=8B949E" alt="Most Used Languages" />
+        </div>
+        
+        <br><br>
+
+        <!-- ROW 2: Streak Stats -->
+        <div align="center">
+          <img width="860" src="https://streak-stats.demolab.com/?user=Dhruva-Aher&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=4F8CFF&fire=4F8CFF&currStreakNum=E6EDF3" alt="GitHub Streak Stats" />
+        </div>
+
+        <br><br>
+
+        <!-- ROW 3: Contribution Activity Graph -->
+        <div align="center">
+          <img width="860" src="https://github-readme-activity-graph.vercel.app/graph?username=Dhruva-Aher&theme=github-dark&bg_color=0D1117&hide_border=true&color=4F8CFF&line=4F8CFF&point=E6EDF3" alt="Contribution Graph" />
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br><br>
+
+<!-- SECTION 6: CUSTOM ENGINEERING METRICS CARD -->
 <div align="center">
   <img src="./assets/metrics.svg" width="900" alt="Engineering Metrics & Scale" />
 </div>
 
 <br><br>
 
-<!-- SECTION 6: PROJECT ARCHITECTURE -->
+<!-- SECTION 7: PROJECT ARCHITECTURE -->
 <div align="center">
   <img src="./assets/architecture.svg" width="900" alt="Project Architecture" />
 </div>
 
 <br><br>
 
-<!-- SECTION 7: JOURNEY TIMELINE -->
+<!-- SECTION 8: JOURNEY TIMELINE -->
 <div align="center">
   <img src="./assets/timeline.svg" width="900" alt="Journey" />
 </div>
 
 <br><br>
 
-<!-- SECTION 8: CONTACT SHIELDS -->
+<!-- SECTION 9: CONTACT SHIELDS -->
 <div align="center">
   <a href="https://dhruvaaher.dev"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=safari&logoColor=4F8CFF" alt="Portfolio" /></a>
   &nbsp;
