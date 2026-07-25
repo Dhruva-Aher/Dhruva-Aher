@@ -183,9 +183,9 @@
 <h3 style="margin-top: 0; color: #FFFFFF;">GitHub Activity &amp; Stats</h3>
 <p style="color: #8B949E; font-size: 13px; margin-bottom: 20px;"><em>Live metrics updated on every GitHub event</em></p>
 
-<!-- ROW 1: GitHub Stats + Most Used Languages -->
+<!-- ROW 1: GitHub Stats (Rank Hidden) + Most Used Languages -->
 <div align="center">
-<img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4f8cff&icon_color=4f8cff&text_color=8b949e" alt="GitHub Stats" />
+<img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&hide_rank=true&bg_color=0d1117&title_color=4f8cff&icon_color=4f8cff&text_color=8b949e" alt="GitHub Stats" />
 &nbsp;&nbsp;
 <img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4f8cff&text_color=8b949e" alt="Most Used Languages" />
 </div>
