@@ -14,7 +14,29 @@
 
 <br><br>
 
-<!-- SECTION 2: LANGUAGES AND TOOLS CARD -->
+<!-- SECTION 2: QUICK BYTES & FUN FACTS -->
+<div align="center">
+  <table width="900">
+    <tr>
+      <td width="33%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
+        <h4 style="margin-top: 0; color: #4F8CFF;">🌱 Currently Learning</h4>
+        <p style="color: #8B949E; font-size: 13px;">Advanced Distributed Consensus (Raft/Paxos) &amp; Vector Indexing Algorithms (HNSW).</p>
+      </td>
+      <td width="33%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
+        <h4 style="margin-top: 0; color: #A371F7;">💬 Ask Me About</h4>
+        <p style="color: #8B949E; font-size: 13px;">Redis RESP protocol internals, Go concurrency patterns, and LLM tool calling pipelines.</p>
+      </td>
+      <td width="33%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
+        <h4 style="margin-top: 0; color: #28C840;">⚡ Fun Fact</h4>
+        <p style="color: #8B949E; font-size: 13px;">I love benchmarking network protocols and turning complex systems into simple visual diagrams.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br><br>
+
+<!-- SECTION 3: LANGUAGES AND TOOLS CARD -->
 <div align="center">
   <table width="900">
     <tr>
@@ -31,7 +53,7 @@
 
 <br><br>
 
-<!-- SECTION 3: FEATURED REPOSITORIES (NATIVE GITHUB CARD STYLE) -->
+<!-- SECTION 4: FEATURED REPOSITORIES (NATIVE GITHUB CARD STYLE) -->
 <div align="center">
   <table width="900">
     <tr>
@@ -153,28 +175,28 @@
 
 <br><br>
 
-<!-- SECTION 4: ENGINEERING METRICS CARD -->
+<!-- SECTION 5: ENGINEERING METRICS CARD -->
 <div align="center">
   <img src="./assets/metrics.svg" width="900" alt="Engineering Metrics & Scale" />
 </div>
 
 <br><br>
 
-<!-- SECTION 5: PROJECT ARCHITECTURE -->
+<!-- SECTION 6: PROJECT ARCHITECTURE -->
 <div align="center">
   <img src="./assets/architecture.svg" width="900" alt="Project Architecture" />
 </div>
 
 <br><br>
 
-<!-- SECTION 6: JOURNEY TIMELINE -->
+<!-- SECTION 7: JOURNEY TIMELINE -->
 <div align="center">
   <img src="./assets/timeline.svg" width="900" alt="Journey" />
 </div>
 
 <br><br>
 
-<!-- SECTION 7: CONTACT SHIELDS -->
+<!-- SECTION 8: CONTACT SHIELDS -->
 <div align="center">
   <a href="https://dhruvaaher.dev"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=safari&logoColor=4F8CFF" alt="Portfolio" /></a>
   &nbsp;
