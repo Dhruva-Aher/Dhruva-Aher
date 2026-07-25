@@ -14,14 +14,26 @@
 <br><br><br>
 
 <div align="center">
+  <h2>Engineering Metrics & Scale</h2>
+  <p><em>Empirical performance benchmarks across systems, AI, and distributed applications</em></p>
+  <br>
+  <img src="./assets/metrics.svg" width="900" alt="Engineering Metrics & Scale" />
+</div>
+
+<br><br><br>
+
+<div align="center">
+  <h2>Project Architecture</h2>
+  <p><em>Interactive topology of systems, AI applications, and cloud services</em></p>
+  <br>
   <img src="./assets/architecture.svg" width="900" alt="Project Architecture" />
 </div>
 
 <br><br><br>
 
 <div align="center">
-  <h2>Featured Projects</h2>
-  <p><em>Selected works in distributed systems, AI platforms, and cloud infrastructure</em></p>
+  <h2>Strongest Engineering Works</h2>
+  <p><em>Featured production-grade systems, high-throughput stores, and AI platforms</em></p>
 </div>
 
 <br>
@@ -30,8 +42,8 @@
   <tr>
     <td width="50%" valign="top">
       <br>
-      <h3>◆ RedisLite</h3>
-      <p>A lightweight, Redis-compatible in-memory data store in Go implementing the RESP networking protocol over raw TCP in a Unix/Linux environment. Achieved 75K+ ops/sec with sub-millisecond P95 latency across concurrent TCP clients.</p>
+      <h3>◆ RedisLite — Key-Value Store</h3>
+      <p>A lightweight, Redis-compatible in-memory data store built in <b>Go</b> implementing the RESP networking protocol over raw TCP in Unix/Linux. Achieved <b>75K+ operations/sec</b> with sub-millisecond P95 latency across concurrent TCP clients using goroutines and <code>sync.RWMutex</code> synchronization.</p>
       <p><em>75K+ ops/sec · Sub-millisecond P95 latency · goroutines & sync.RWMutex</em></p>
       <p><code>Go</code> <code>TCP</code> <code>RESP Protocol</code> <code>Concurrent Systems</code> <code>Linux</code></p>
       <a href="https://github.com/Dhruva-Aher/redislite">→ View Repository</a>
@@ -39,8 +51,8 @@
     </td>
     <td width="50%" valign="top">
       <br>
-      <h3>◆ Aura</h3>
-      <p>A distributed task orchestration platform supporting priority scheduling, crash recovery, and Redis-backed concurrent worker coordination across 20,000+ queued tasks, sustaining 300 jobs/min at P95 latency of 6.5s.</p>
+      <h3>◆ Aura — Distributed Task Scheduler</h3>
+      <p>A distributed task orchestration platform in <b>Node.js & Redis</b> supporting priority scheduling, crash recovery, and worker coordination across <b>20,000+ queued tasks</b> (sustaining 300 jobs/min at P95 latency of 6.5s). Validated fault recovery restoring 6,000+ jobs in &lt;2s via 250 unit tests.</p>
       <p><em>20,000+ queued tasks · Heartbeat crash recovery · 250 unit tests</em></p>
       <p><code>Node.js</code> <code>PostgreSQL</code> <code>Redis</code> <code>Docker</code></p>
       <a href="https://github.com/Dhruva-Aher/Aura">→ View Repository</a> · <a href="https://aurasys.vercel.app">⚡ Live Demo</a>
@@ -50,42 +62,44 @@
   <tr>
     <td width="50%" valign="top">
       <br>
-      <h3>◆ JusticeQueue</h3>
-      <p>Designed a 13-step NLP and IR pipeline using LLM tool calling on GCP Vertex AI to analyze legal documents, retrieve semantically similar cases, and generate structured recommendations with explainable reasoning.</p>
-      <p><em>13-step NLP/IR pipeline · Vertex AI Gemini Pro/Flash · text-embedding-004</em></p>
+      <h3>◆ JusticeQueue — AI Legal Triage</h3>
+      <p>Architected a 13-step NLP and information retrieval pipeline on <b>GCP Vertex AI</b> using natural language processing and LLM tool calling (Gemini Pro/Flash, <code>text-embedding-004</code>) to analyze legal documents and retrieve semantically similar cases with explainable reasoning.</p>
+      <p><em>13-step NLP/IR pipeline · Vertex AI Gemini Pro/Flash · Upstash Rate Limiting</em></p>
       <p><code>Next.js 14</code> <code>GCP Vertex AI</code> <code>MongoDB Atlas</code> <code>Gemini API</code> <code>Upstash Redis</code></p>
       <a href="https://github.com/Dhruva-Aher/JusticeQueue">→ View Repository</a> · <a href="https://justicequeuelive.vercel.app">⚡ Live Demo</a>
       <br><br>
     </td>
     <td width="50%" valign="top">
       <br>
-      <h3>◆ FlowBoard</h3>
-      <p>Architected a multi-tenant project management SaaS platform with isolated workspaces, role-based access control, JWT authentication, and real-time collaborative editing over WebSockets.</p>
+      <h3>◆ FlowBoard — Real-Time SaaS Platform</h3>
+      <p>Architected a multi-tenant project management platform with isolated workspaces, role-based access control (RBAC), JWT authentication, and real-time collaborative editing over <b>WebSockets</b> with optimistic UI updates via TanStack Query and Zustand.</p>
       <p><em>Multi-tenant RBAC · WebSockets real-time sync · TanStack Query & Zustand</em></p>
       <p><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code> <code>WebSockets</code></p>
       <a href="https://github.com/Dhruva-Aher/FlowBoard">→ View Repository</a>
       <br><br>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <br>
+      <h3>◆ PRBeliefs / ReviewAgent — Code Review Bot</h3>
+      <p>GitHub Marketplace application performing automated code reviews by dispatching parallel workers via a Redis-backed async queue. Decoupled webhook ingestion pipeline deployed with Docker Compose and GitHub Actions CI/CD.</p>
+      <p><em>GitHub Marketplace app · Decoupled webhook queue · Docker Compose CI/CD</em></p>
+      <p><code>Python</code> <code>Redis</code> <code>SQLite</code> <code>Docker</code> <code>GitHub Actions</code></p>
+      <a href="https://github.com/Dhruva-Aher/ReviewAgent">→ View Repository</a>
+      <br><br>
+    </td>
+    <td width="50%" valign="top">
+      <br>
+      <h3>◆ FEMA Aid Response Gap Tracker</h3>
+      <p>Analytics dashboard and ETL pipeline processing <b>810K+ FEMA disaster records</b> across 3,200+ counties, joining disbursement data with U.S. Census income records. Deployed on AWS (ECS, RDS, S3, CloudFront) with Terraform.</p>
+      <p><em>810K+ FEMA records · Census Data Join · AWS ECS/RDS/S3 Terraform</em></p>
+      <p><code>Python</code> <code>Pandas</code> <code>AWS</code> <code>Terraform</code> <code>Docker</code> <code>Redis</code></p>
+      <a href="https://github.com/Dhruva-Aher/Disaster-Relief-Response-Gap-Tracker-DRRGT-">→ View Repository</a>
+      <br><br>
+    </td>
+  </tr>
 </table>
-
-<br>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" valign="top">
-        <br>
-        <h3>◆ PRBeliefs</h3>
-        <p>Built and deployed a GitHub Marketplace app performing automated code reviews via parallel workers and Redis-backed async queue; outputs structured, ranked feedback with per-installation rate limiting.</p>
-        <p><em>GitHub Marketplace app · Decoupled webhook queue · Docker Compose CI/CD</em></p>
-        <p><code>Python</code> <code>Redis</code> <code>SQLite</code> <code>Docker</code> <code>GitHub Actions</code></p>
-        <a href="https://github.com/Dhruva-Aher/ReviewAgent">→ View Repository</a>
-        <br><br>
-      </td>
-    </tr>
-  </table>
-</div>
 
 <br><br><br>
 
@@ -115,16 +129,6 @@
 
 <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=dark" alt="Frontend" />
 
-</div>
-
-<br><br><br>
-
-<div align="center">
-  <h2>Metrics</h2>
-  <br>
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F8CFF&icon_color=4F8CFF&text_color=8B949E&ring_color=4F8CFF" alt="GitHub Stats" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=4F8CFF&text_color=8B949E" alt="Top Languages" />
 </div>
 
 <br><br><br>
