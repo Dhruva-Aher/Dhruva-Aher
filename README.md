@@ -20,15 +20,15 @@
 <tr>
 <td width="33%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
 <h4 style="margin-top: 0; color: #4F8CFF;">🌱 Currently Learning</h4>
-<p style="color: #8B949E; font-size: 13px;">Advanced Distributed Consensus (Raft/Paxos) &amp; Vector Indexing Algorithms (HNSW).</p>
+<p style="color: #8B949E; font-size: 13px;">Computer Systems, Operating Systems Fundamentals, &amp; Network Protocols.</p>
 </td>
 <td width="33%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
 <h4 style="margin-top: 0; color: #A371F7;">💬 Ask Me About</h4>
-<p style="color: #8B949E; font-size: 13px;">Redis RESP protocol internals, Go concurrency patterns, and LLM tool calling pipelines.</p>
+<p style="color: #8B949E; font-size: 13px;">Go &amp; Python backend projects, Redis key-value stores, and CS coursework at ASU.</p>
 </td>
 <td width="33%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
 <h4 style="margin-top: 0; color: #28C840;">⚡ Fun Fact</h4>
-<p style="color: #8B949E; font-size: 13px;">I love benchmarking network protocols and turning complex systems into simple visual diagrams.</p>
+<p style="color: #8B949E; font-size: 13px;">I like building tools from scratch to understand how systems work under the hood.</p>
 </td>
 </tr>
 </table>
