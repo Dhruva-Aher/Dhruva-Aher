@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <!-- Animations -->
+    <style>
+      .node {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      .node-1 { animation-delay: 0.1s; }
+      .node-2 { animation-delay: 0.4s; }
+      .node-3 { animation-delay: 0.7s; }
+      .node-4 { animation-delay: 1.0s; }
+      .node-5 { animation-delay: 1.3s; }
+      .node-6 { animation-delay: 1.6s; }
+      .node-7 { animation-delay: 1.9s; }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .pulse-dot {
+        animation: pulse 3s ease-in-out infinite;
+      }
+      .dot-1 { animation-delay: 0s; }
+      .dot-2 { animation-delay: 0.4s; }
+      .dot-3 { animation-delay: 0.8s; }
+      .dot-4 { animation-delay: 1.2s; }
+      .dot-5 { animation-delay: 1.6s; }
+      .dot-6 { animation-delay: 2.0s; }
+      .dot-7 { animation-delay: 2.4s; }
+      
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+      }
+
+      .future-card {
+        animation: pulseOpacity 3s ease-in-out infinite;
+      }
+      @keyframes pulseOpacity {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+      
+      .timeline-glow {
+        animation: sweep 4s ease-in-out infinite;
+      }
+      @keyframes sweep {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(100%); }
+      }
+    </style>
+    
+    <!-- Timeline Gradient Overlay -->
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="50%" stop-color="#4F8CFF" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <!-- Filters for shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#0D1117" />
+
+  <!-- Timeline Center Line Base -->
+  <line x1="450" y1="40" x2="450" y2="560" stroke="#30363D" stroke-width="2" />
+  
+  <!-- Timeline Glow line (masked via clip path or nested svg) -->
+  <svg x="449" y="40" width="2" height="520">
+    <rect width="2" height="520" fill="url(#glow)" class="timeline-glow" />
+  </svg>
+
+  <!-- Groups for each timeline item. Format: 
+       Left nodes X: 110, Y spacing ~ 80
+       Right nodes X: 490
+       Y values: 60, 140, 220, 300, 380, 460, 540 -->
+
+  <!-- Node 1: Aug 2024 -->
+  <g class="node node-1">
+    <!-- Connecting line -->
+    <line x1="410" y1="60" x2="450" y2="60" stroke="#30363D" stroke-width="2" />
+    <!-- Card -->
+    <rect x="110" y="25" width="300" height="70" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" filter="url(#shadow)"/>
+    <!-- Icon Placeholder -->
+    <rect x="125" y="40" width="40" height="40" rx="8" fill="#0D1117" />
+    <path d="M145 48 l10 6 -10 6 -10 -6 z" fill="#8B949E"/>
+    <!-- Text -->
+    <text x="180" y="48" fill="#4F8CFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">AUG 2024</text>
+    <text x="180" y="68" fill="#E6EDF3" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Started at Arizona State University</text>
+    <!-- Dot -->
+    <circle cx="450" cy="60" r="6" fill="#161B22" stroke="#4F8CFF" stroke-width="2" class="pulse-dot dot-1" style="transform-origin: 450px 60px;"/>
+  </g>
+
+  <!-- Node 2: Dec 2024 -->
+  <g class="node node-2">
+    <!-- Connecting line -->
+    <line x1="450" y1="140" x2="490" y2="140" stroke="#30363D" stroke-width="2" />
+    <!-- Card -->
+    <rect x="490" y="105" width="300" height="70" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="505" y="120" width="40" height="40" rx="8" fill="#0D1117" />
+    <polygon points="525,128 530,138 540,138 532,144 535,154 525,148 515,154 518,144 510,138 520,138" fill="#8B949E"/>
+    <text x="560" y="128" fill="#4F8CFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">DEC 2024</text>
+    <text x="560" y="148" fill="#E6EDF3" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Dean's List · Fall 2024</text>
+    <circle cx="450" cy="140" r="6" fill="#161B22" stroke="#4F8CFF" stroke-width="2" class="pulse-dot dot-2" style="transform-origin: 450px 140px;"/>
+  </g>
+
+  <!-- Node 3: Jan 2025 -->
+  <g class="node node-3">
+    <line x1="410" y1="220" x2="450" y2="220" stroke="#30363D" stroke-width="2" />
+    <rect x="110" y="185" width="300" height="70" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="125" y="200" width="40" height="40" rx="8" fill="#0D1117" />
+    <path d="M135 210 h20 v10 c0 5 -5 10 -10 10 c-5 0 -10 -5 -10 -10 z" fill="#8B949E"/>
+    <text x="180" y="208" fill="#4F8CFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">JAN 2025</text>
+    <text x="180" y="228" fill="#E6EDF3" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Grand Challenges Scholar</text>
+    <circle cx="450" cy="220" r="6" fill="#161B22" stroke="#4F8CFF" stroke-width="2" class="pulse-dot dot-3" style="transform-origin: 450px 220px;"/>
+  </g>
+
+  <!-- Node 4: Feb 2025 -->
+  <g class="node node-4">
+    <line x1="450" y1="300" x2="490" y2="300" stroke="#30363D" stroke-width="2" />
+    <rect x="490" y="265" width="300" height="70" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="505" y="280" width="40" height="40" rx="8" fill="#0D1117" />
+    <text x="515" y="305" fill="#8B949E" font-family="monospace" font-size="20" font-weight="bold">&lt;/&gt;</text>
+    <text x="560" y="288" fill="#4F8CFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">FEB 2025</text>
+    <text x="560" y="308" fill="#E6EDF3" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">ACM Chapter Coordinator</text>
+    <circle cx="450" cy="300" r="6" fill="#161B22" stroke="#4F8CFF" stroke-width="2" class="pulse-dot dot-4" style="transform-origin: 450px 300px;"/>
+  </g>
+
+  <!-- Node 5: Mar 2025 -->
+  <g class="node node-5">
+    <line x1="410" y1="380" x2="450" y2="380" stroke="#4F8CFF" stroke-width="2" />
+    <!-- Accent border -->
+    <rect x="110" y="345" width="300" height="70" rx="12" fill="#161B22" stroke="#4F8CFF" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="125" y="360" width="40" height="40" rx="8" fill="#0D1117" />
+    <path d="M135 365 c0 -3 20 -3 20 0 v5 c0 3 -20 3 -20 0 z M135 373 c0 -3 20 -3 20 0 v5 c0 3 -20 3 -20 0 z M135 381 c0 -3 20 -3 20 0 v5 c0 3 -20 3 -20 0 z" fill="#8B949E"/>
+    <text x="180" y="368" fill="#4F8CFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">MAR 2025</text>
+    <text x="180" y="388" fill="#E6EDF3" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Built RedisLite</text>
+    <circle cx="450" cy="380" r="6" fill="#161B22" stroke="#4F8CFF" stroke-width="2" class="pulse-dot dot-5" style="transform-origin: 450px 380px;"/>
+  </g>
+
+  <!-- Node 6: Jun 2025 -->
+  <g class="node node-6">
+    <line x1="450" y1="460" x2="490" y2="460" stroke="#4F8CFF" stroke-width="2" />
+    <!-- Accent border -->
+    <rect x="490" y="425" width="300" height="70" rx="12" fill="#161B22" stroke="#4F8CFF" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="505" y="440" width="40" height="40" rx="8" fill="#0D1117" />
+    <circle cx="525" cy="450" r="4" fill="#8B949E"/>
+    <circle cx="515" cy="465" r="4" fill="#8B949E"/>
+    <circle cx="535" cy="465" r="4" fill="#8B949E"/>
+    <path d="M525 450 l-10 15 m10 -15 l10 15 m-20 0 h20" stroke="#8B949E" stroke-width="2"/>
+    <text x="560" y="448" fill="#4F8CFF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">JUN 2025</text>
+    <text x="560" y="468" fill="#E6EDF3" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Built Aura</text>
+    <circle cx="450" cy="460" r="6" fill="#161B22" stroke="#4F8CFF" stroke-width="2" class="pulse-dot dot-6" style="transform-origin: 450px 460px;"/>
+  </g>
+
+  <!-- Node 7: 2027 -->
+  <g class="node node-7 future-card">
+    <line x1="410" y1="540" x2="450" y2="540" stroke="#30363D" stroke-width="2" stroke-dasharray="4,4"/>
+    <rect x="110" y="505" width="300" height="70" rx="12" fill="#0D1117" stroke="#30363D" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <rect x="125" y="520" width="40" height="40" rx="8" fill="#161B22" />
+    <path d="M145 528 l5 15 -5 -2 -5 2 z" fill="#8B949E"/>
+    <text x="180" y="528" fill="#8B949E" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">2027</text>
+    <text x="180" y="548" fill="#8B949E" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Summer SWE Internship</text>
+    <circle cx="450" cy="540" r="6" fill="#0D1117" stroke="#8B949E" stroke-width="2" stroke-dasharray="2,2" class="pulse-dot dot-7" style="transform-origin: 450px 540px;"/>
+  </g>
+
+</svg>

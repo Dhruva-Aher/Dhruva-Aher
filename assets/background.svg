@@ -1,0 +1,336 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+<stop offset="0%" stop-color="#4F8CFF" stop-opacity="0.08" />
+<stop offset="100%" stop-color="#4F8CFF" stop-opacity="0" />
+</radialGradient>
+<linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="transparent" />
+<stop offset="50%" stop-color="#4F8CFF" stop-opacity="0.15" />
+<stop offset="100%" stop-color="transparent" />
+</linearGradient>
+<style>
+@keyframes orb1 { 0% { transform: translate(-100px, 0); } 33% { transform: translate(300px, -50px); } 66% { transform: translate(600px, 100px); } 100% { transform: translate(-100px, 0); } }
+@keyframes orb2 { 0% { transform: translate(1000px, 200px); } 33% { transform: translate(500px, 0px); } 66% { transform: translate(200px, 150px); } 100% { transform: translate(1000px, 200px); } }
+@keyframes pulseLine { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+@keyframes wave0 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(0.0px); } }
+@keyframes wave1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(1.6632935265420745px); } }
+@keyframes wave2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3.2538931446064012px); } }
+@keyframes wave3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4.702282018339785px); } }
+@keyframes wave4 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5.945158603819154px); } }
+@keyframes wave5 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6.928203230275509px); } }
+@keyframes wave6 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7.608452130361228px); } }
+@keyframes wave7 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7.956175162946186px); } }
+@keyframes wave8 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7.956175162946187px); } }
+@keyframes wave9 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7.608452130361229px); } }
+@keyframes wave10 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6.92820323027551px); } }
+@keyframes wave11 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5.945158603819156px); } }
+@keyframes wave12 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4.702282018339786px); } }
+@keyframes wave13 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3.2538931446064003px); } }
+@keyframes wave14 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(1.6632935265420745px); } }
+@keyframes wave15 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(9.797174393178826e-16px); } }
+@keyframes wave16 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.6632935265420725px); } }
+@keyframes wave17 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3.2538931446063986px); } }
+@keyframes wave18 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4.702282018339784px); } }
+@keyframes wave19 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5.945158603819152px); } }
+@keyframes wave20 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6.928203230275507px); } }
+@keyframes wave21 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7.608452130361228px); } }
+@keyframes wave22 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7.956175162946186px); } }
+@keyframes wave23 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7.956175162946186px); } }
+@keyframes wave24 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7.608452130361229px); } }
+@keyframes wave25 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6.928203230275509px); } }
+@keyframes wave26 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5.945158603819152px); } }
+@keyframes wave27 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4.702282018339787px); } }
+@keyframes wave28 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3.2538931446064012px); } }
+@keyframes wave29 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.663293526542079px); } }
+@keyframes wave30 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.959434878635765e-15px); } }
+.dot { fill: #30363D; opacity: 0.4; }
+</style>
+</defs>
+<g style="animation: orb1 20s infinite ease-in-out;">
+<circle cx="0" cy="100" r="180" fill="url(#glow)" />
+</g>
+<g style="animation: orb2 25s infinite ease-in-out;">
+<circle cx="0" cy="0" r="150" fill="url(#glow)" />
+</g>
+<rect x="0" y="99" width="900" height="2" fill="url(#lineGrad)" style="animation: pulseLine 8s infinite ease-in-out;" />
+<g style="animation: wave0 15s infinite ease-in-out -0.0s;">
+<circle cx="0" cy="10" r="1" class="dot" />
+<circle cx="0" cy="40" r="1" class="dot" />
+<circle cx="0" cy="70" r="1" class="dot" />
+<circle cx="0" cy="100" r="1" class="dot" />
+<circle cx="0" cy="130" r="1" class="dot" />
+<circle cx="0" cy="160" r="1" class="dot" />
+<circle cx="0" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave1 15s infinite ease-in-out -0.5s;">
+<circle cx="30" cy="10" r="1" class="dot" />
+<circle cx="30" cy="40" r="1" class="dot" />
+<circle cx="30" cy="70" r="1" class="dot" />
+<circle cx="30" cy="100" r="1" class="dot" />
+<circle cx="30" cy="130" r="1" class="dot" />
+<circle cx="30" cy="160" r="1" class="dot" />
+<circle cx="30" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave2 15s infinite ease-in-out -1.0s;">
+<circle cx="60" cy="10" r="1" class="dot" />
+<circle cx="60" cy="40" r="1" class="dot" />
+<circle cx="60" cy="70" r="1" class="dot" />
+<circle cx="60" cy="100" r="1" class="dot" />
+<circle cx="60" cy="130" r="1" class="dot" />
+<circle cx="60" cy="160" r="1" class="dot" />
+<circle cx="60" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave3 15s infinite ease-in-out -1.5s;">
+<circle cx="90" cy="10" r="1" class="dot" />
+<circle cx="90" cy="40" r="1" class="dot" />
+<circle cx="90" cy="70" r="1" class="dot" />
+<circle cx="90" cy="100" r="1" class="dot" />
+<circle cx="90" cy="130" r="1" class="dot" />
+<circle cx="90" cy="160" r="1" class="dot" />
+<circle cx="90" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave4 15s infinite ease-in-out -2.0s;">
+<circle cx="120" cy="10" r="1" class="dot" />
+<circle cx="120" cy="40" r="1" class="dot" />
+<circle cx="120" cy="70" r="1" class="dot" />
+<circle cx="120" cy="100" r="1" class="dot" />
+<circle cx="120" cy="130" r="1" class="dot" />
+<circle cx="120" cy="160" r="1" class="dot" />
+<circle cx="120" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave5 15s infinite ease-in-out -2.5s;">
+<circle cx="150" cy="10" r="1" class="dot" />
+<circle cx="150" cy="40" r="1" class="dot" />
+<circle cx="150" cy="70" r="1" class="dot" />
+<circle cx="150" cy="100" r="1" class="dot" />
+<circle cx="150" cy="130" r="1" class="dot" />
+<circle cx="150" cy="160" r="1" class="dot" />
+<circle cx="150" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave6 15s infinite ease-in-out -3.0s;">
+<circle cx="180" cy="10" r="1" class="dot" />
+<circle cx="180" cy="40" r="1" class="dot" />
+<circle cx="180" cy="70" r="1" class="dot" />
+<circle cx="180" cy="100" r="1" class="dot" />
+<circle cx="180" cy="130" r="1" class="dot" />
+<circle cx="180" cy="160" r="1" class="dot" />
+<circle cx="180" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave7 15s infinite ease-in-out -3.5s;">
+<circle cx="210" cy="10" r="1" class="dot" />
+<circle cx="210" cy="40" r="1" class="dot" />
+<circle cx="210" cy="70" r="1" class="dot" />
+<circle cx="210" cy="100" r="1" class="dot" />
+<circle cx="210" cy="130" r="1" class="dot" />
+<circle cx="210" cy="160" r="1" class="dot" />
+<circle cx="210" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave8 15s infinite ease-in-out -4.0s;">
+<circle cx="240" cy="10" r="1" class="dot" />
+<circle cx="240" cy="40" r="1" class="dot" />
+<circle cx="240" cy="70" r="1" class="dot" />
+<circle cx="240" cy="100" r="1" class="dot" />
+<circle cx="240" cy="130" r="1" class="dot" />
+<circle cx="240" cy="160" r="1" class="dot" />
+<circle cx="240" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave9 15s infinite ease-in-out -4.5s;">
+<circle cx="270" cy="10" r="1" class="dot" />
+<circle cx="270" cy="40" r="1" class="dot" />
+<circle cx="270" cy="70" r="1" class="dot" />
+<circle cx="270" cy="100" r="1" class="dot" />
+<circle cx="270" cy="130" r="1" class="dot" />
+<circle cx="270" cy="160" r="1" class="dot" />
+<circle cx="270" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave10 15s infinite ease-in-out -5.0s;">
+<circle cx="300" cy="10" r="1" class="dot" />
+<circle cx="300" cy="40" r="1" class="dot" />
+<circle cx="300" cy="70" r="1" class="dot" />
+<circle cx="300" cy="100" r="1" class="dot" />
+<circle cx="300" cy="130" r="1" class="dot" />
+<circle cx="300" cy="160" r="1" class="dot" />
+<circle cx="300" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave11 15s infinite ease-in-out -5.5s;">
+<circle cx="330" cy="10" r="1" class="dot" />
+<circle cx="330" cy="40" r="1" class="dot" />
+<circle cx="330" cy="70" r="1" class="dot" />
+<circle cx="330" cy="100" r="1" class="dot" />
+<circle cx="330" cy="130" r="1" class="dot" />
+<circle cx="330" cy="160" r="1" class="dot" />
+<circle cx="330" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave12 15s infinite ease-in-out -6.0s;">
+<circle cx="360" cy="10" r="1" class="dot" />
+<circle cx="360" cy="40" r="1" class="dot" />
+<circle cx="360" cy="70" r="1" class="dot" />
+<circle cx="360" cy="100" r="1" class="dot" />
+<circle cx="360" cy="130" r="1" class="dot" />
+<circle cx="360" cy="160" r="1" class="dot" />
+<circle cx="360" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave13 15s infinite ease-in-out -6.5s;">
+<circle cx="390" cy="10" r="1" class="dot" />
+<circle cx="390" cy="40" r="1" class="dot" />
+<circle cx="390" cy="70" r="1" class="dot" />
+<circle cx="390" cy="100" r="1" class="dot" />
+<circle cx="390" cy="130" r="1" class="dot" />
+<circle cx="390" cy="160" r="1" class="dot" />
+<circle cx="390" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave14 15s infinite ease-in-out -7.0s;">
+<circle cx="420" cy="10" r="1" class="dot" />
+<circle cx="420" cy="40" r="1" class="dot" />
+<circle cx="420" cy="70" r="1" class="dot" />
+<circle cx="420" cy="100" r="1" class="dot" />
+<circle cx="420" cy="130" r="1" class="dot" />
+<circle cx="420" cy="160" r="1" class="dot" />
+<circle cx="420" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave15 15s infinite ease-in-out -7.5s;">
+<circle cx="450" cy="10" r="1" class="dot" />
+<circle cx="450" cy="40" r="1" class="dot" />
+<circle cx="450" cy="70" r="1" class="dot" />
+<circle cx="450" cy="100" r="1" class="dot" />
+<circle cx="450" cy="130" r="1" class="dot" />
+<circle cx="450" cy="160" r="1" class="dot" />
+<circle cx="450" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave16 15s infinite ease-in-out -8.0s;">
+<circle cx="480" cy="10" r="1" class="dot" />
+<circle cx="480" cy="40" r="1" class="dot" />
+<circle cx="480" cy="70" r="1" class="dot" />
+<circle cx="480" cy="100" r="1" class="dot" />
+<circle cx="480" cy="130" r="1" class="dot" />
+<circle cx="480" cy="160" r="1" class="dot" />
+<circle cx="480" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave17 15s infinite ease-in-out -8.5s;">
+<circle cx="510" cy="10" r="1" class="dot" />
+<circle cx="510" cy="40" r="1" class="dot" />
+<circle cx="510" cy="70" r="1" class="dot" />
+<circle cx="510" cy="100" r="1" class="dot" />
+<circle cx="510" cy="130" r="1" class="dot" />
+<circle cx="510" cy="160" r="1" class="dot" />
+<circle cx="510" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave18 15s infinite ease-in-out -9.0s;">
+<circle cx="540" cy="10" r="1" class="dot" />
+<circle cx="540" cy="40" r="1" class="dot" />
+<circle cx="540" cy="70" r="1" class="dot" />
+<circle cx="540" cy="100" r="1" class="dot" />
+<circle cx="540" cy="130" r="1" class="dot" />
+<circle cx="540" cy="160" r="1" class="dot" />
+<circle cx="540" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave19 15s infinite ease-in-out -9.5s;">
+<circle cx="570" cy="10" r="1" class="dot" />
+<circle cx="570" cy="40" r="1" class="dot" />
+<circle cx="570" cy="70" r="1" class="dot" />
+<circle cx="570" cy="100" r="1" class="dot" />
+<circle cx="570" cy="130" r="1" class="dot" />
+<circle cx="570" cy="160" r="1" class="dot" />
+<circle cx="570" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave20 15s infinite ease-in-out -10.0s;">
+<circle cx="600" cy="10" r="1" class="dot" />
+<circle cx="600" cy="40" r="1" class="dot" />
+<circle cx="600" cy="70" r="1" class="dot" />
+<circle cx="600" cy="100" r="1" class="dot" />
+<circle cx="600" cy="130" r="1" class="dot" />
+<circle cx="600" cy="160" r="1" class="dot" />
+<circle cx="600" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave21 15s infinite ease-in-out -10.5s;">
+<circle cx="630" cy="10" r="1" class="dot" />
+<circle cx="630" cy="40" r="1" class="dot" />
+<circle cx="630" cy="70" r="1" class="dot" />
+<circle cx="630" cy="100" r="1" class="dot" />
+<circle cx="630" cy="130" r="1" class="dot" />
+<circle cx="630" cy="160" r="1" class="dot" />
+<circle cx="630" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave22 15s infinite ease-in-out -11.0s;">
+<circle cx="660" cy="10" r="1" class="dot" />
+<circle cx="660" cy="40" r="1" class="dot" />
+<circle cx="660" cy="70" r="1" class="dot" />
+<circle cx="660" cy="100" r="1" class="dot" />
+<circle cx="660" cy="130" r="1" class="dot" />
+<circle cx="660" cy="160" r="1" class="dot" />
+<circle cx="660" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave23 15s infinite ease-in-out -11.5s;">
+<circle cx="690" cy="10" r="1" class="dot" />
+<circle cx="690" cy="40" r="1" class="dot" />
+<circle cx="690" cy="70" r="1" class="dot" />
+<circle cx="690" cy="100" r="1" class="dot" />
+<circle cx="690" cy="130" r="1" class="dot" />
+<circle cx="690" cy="160" r="1" class="dot" />
+<circle cx="690" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave24 15s infinite ease-in-out -12.0s;">
+<circle cx="720" cy="10" r="1" class="dot" />
+<circle cx="720" cy="40" r="1" class="dot" />
+<circle cx="720" cy="70" r="1" class="dot" />
+<circle cx="720" cy="100" r="1" class="dot" />
+<circle cx="720" cy="130" r="1" class="dot" />
+<circle cx="720" cy="160" r="1" class="dot" />
+<circle cx="720" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave25 15s infinite ease-in-out -12.5s;">
+<circle cx="750" cy="10" r="1" class="dot" />
+<circle cx="750" cy="40" r="1" class="dot" />
+<circle cx="750" cy="70" r="1" class="dot" />
+<circle cx="750" cy="100" r="1" class="dot" />
+<circle cx="750" cy="130" r="1" class="dot" />
+<circle cx="750" cy="160" r="1" class="dot" />
+<circle cx="750" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave26 15s infinite ease-in-out -13.0s;">
+<circle cx="780" cy="10" r="1" class="dot" />
+<circle cx="780" cy="40" r="1" class="dot" />
+<circle cx="780" cy="70" r="1" class="dot" />
+<circle cx="780" cy="100" r="1" class="dot" />
+<circle cx="780" cy="130" r="1" class="dot" />
+<circle cx="780" cy="160" r="1" class="dot" />
+<circle cx="780" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave27 15s infinite ease-in-out -13.5s;">
+<circle cx="810" cy="10" r="1" class="dot" />
+<circle cx="810" cy="40" r="1" class="dot" />
+<circle cx="810" cy="70" r="1" class="dot" />
+<circle cx="810" cy="100" r="1" class="dot" />
+<circle cx="810" cy="130" r="1" class="dot" />
+<circle cx="810" cy="160" r="1" class="dot" />
+<circle cx="810" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave28 15s infinite ease-in-out -14.0s;">
+<circle cx="840" cy="10" r="1" class="dot" />
+<circle cx="840" cy="40" r="1" class="dot" />
+<circle cx="840" cy="70" r="1" class="dot" />
+<circle cx="840" cy="100" r="1" class="dot" />
+<circle cx="840" cy="130" r="1" class="dot" />
+<circle cx="840" cy="160" r="1" class="dot" />
+<circle cx="840" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave29 15s infinite ease-in-out -14.5s;">
+<circle cx="870" cy="10" r="1" class="dot" />
+<circle cx="870" cy="40" r="1" class="dot" />
+<circle cx="870" cy="70" r="1" class="dot" />
+<circle cx="870" cy="100" r="1" class="dot" />
+<circle cx="870" cy="130" r="1" class="dot" />
+<circle cx="870" cy="160" r="1" class="dot" />
+<circle cx="870" cy="190" r="1" class="dot" />
+</g>
+<g style="animation: wave30 15s infinite ease-in-out -15.0s;">
+<circle cx="900" cy="10" r="1" class="dot" />
+<circle cx="900" cy="40" r="1" class="dot" />
+<circle cx="900" cy="70" r="1" class="dot" />
+<circle cx="900" cy="100" r="1" class="dot" />
+<circle cx="900" cy="130" r="1" class="dot" />
+<circle cx="900" cy="160" r="1" class="dot" />
+<circle cx="900" cy="190" r="1" class="dot" />
+</g>
+</svg>

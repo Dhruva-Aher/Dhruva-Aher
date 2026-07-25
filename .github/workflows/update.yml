@@ -1,0 +1,30 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Update timestamp
+        run: |
+          # Update the last-updated timestamp in README if placeholder exists
+          TIMESTAMP=$(date -u '+%B %d, %Y')
+          if grep -q '<!-- LAST_UPDATED -->' README.md; then
+            sed -i "s|<!-- LAST_UPDATED -->.*<!-- /LAST_UPDATED -->|<!-- LAST_UPDATED -->Last updated: ${TIMESTAMP}<!-- /LAST_UPDATED -->|g" README.md
+          fi
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git diff --quiet || (git add -A && git commit -m "chore: update README [skip ci]" && git push)

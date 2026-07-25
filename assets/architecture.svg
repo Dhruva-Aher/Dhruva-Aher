@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      }
+      
+      .dash-line {
+        stroke-dasharray: 6 6;
+        animation: dash-flow 4s linear infinite;
+      }
+      
+      .dash-line-fast {
+        stroke-dasharray: 4 8;
+        animation: dash-flow 2.5s linear infinite reverse;
+      }
+      
+      @keyframes dash-flow {
+        from {
+          stroke-dashoffset: 48;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      
+      .pulse-glow {
+        animation: pulse 4s ease-in-out infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% {
+          filter: drop-shadow(0 0 4px rgba(79, 140, 255, 0.2));
+        }
+        50% {
+          filter: drop-shadow(0 0 12px rgba(79, 140, 255, 0.5));
+        }
+      }
+      
+      .hover-border {
+        transition: stroke 0.3s ease;
+      }
+      
+      a:hover .hover-border {
+        stroke: #4F8CFF;
+      }
+      
+      a:hover .card-bg {
+        fill: #1c2128;
+      }
+      
+      .node-text-title {
+        font-weight: 600;
+        font-size: 14px;
+        fill: #E6EDF3;
+      }
+      
+      .node-text-desc {
+        font-weight: 400;
+        font-size: 12px;
+        fill: #8B949E;
+      }
+      
+      /* Cycle through border colors to simulate activity */
+      .cycle-border-1 { animation: border-cycle-1 12s infinite; }
+      .cycle-border-2 { animation: border-cycle-2 12s infinite; }
+      .cycle-border-3 { animation: border-cycle-3 12s infinite; }
+      
+      @keyframes border-cycle-1 {
+        0%, 20% { stroke: #4F8CFF; }
+        33%, 100% { stroke: #30363D; }
+      }
+      
+      @keyframes border-cycle-2 {
+        0%, 30% { stroke: #30363D; }
+        33%, 53% { stroke: #4F8CFF; }
+        66%, 100% { stroke: #30363D; }
+      }
+      
+      @keyframes border-cycle-3 {
+        0%, 63% { stroke: #30363D; }
+        66%, 86% { stroke: #4F8CFF; }
+        100% { stroke: #30363D; }
+      }
+    </style>
+    
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
+
+    <!-- Arrow head marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4F8CFF" opacity="0.6"/>
+    </marker>
+    
+    <!-- Link Icon -->
+    <g id="link-icon">
+      <path d="M11 7H13V15H3V5H11V7H5V13H11V7ZM15 3V9H13V6.41L7.7 11.7L6.3 10.3L11.59 5H9V3H15Z" fill="#8B949E" />
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bg-grad)" />
+
+  <!-- Global Header -->
+  <text x="450" y="55" font-size="24" font-weight="600" fill="#E6EDF3" text-anchor="middle" letter-spacing="1">Project Architecture</text>
+  <text x="450" y="80" font-size="14" fill="#8B949E" text-anchor="middle" font-weight="400">Systems I've Built</text>
+
+  <!-- ==================== LEFT COLUMN: Distributed Systems ==================== -->
+  <g transform="translate(100, 120)">
+    <!-- Category Container -->
+    <rect width="320" height="350" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    
+    <!-- Connecting lines (behind nodes) -->
+    <path d="M160 50 L160 300" stroke="#4F8CFF" stroke-width="1.5" fill="none" opacity="0.3" class="dash-line" />
+    <path d="M160 145 L20 145" stroke="#4F8CFF" stroke-width="1" fill="none" opacity="0.2" class="dash-line-fast" />
+    <path d="M160 225 L300 225" stroke="#4F8CFF" stroke-width="1" fill="none" opacity="0.2" class="dash-line-fast" />
+    
+    <!-- Category Header -->
+    <g transform="translate(60, 20)" class="pulse-glow">
+      <rect width="200" height="40" rx="20" fill="#0D1117" stroke="#4F8CFF" stroke-width="1.5" opacity="0.8" />
+      <g transform="translate(20, 12)">
+        <!-- Network Icon -->
+        <circle cx="6" cy="8" r="3" fill="#4F8CFF" />
+        <circle cx="16" cy="4" r="2.5" fill="#4F8CFF" />
+        <circle cx="16" cy="12" r="2.5" fill="#4F8CFF" />
+        <path d="M7.5 7 L14 4 M7.5 9 L14 12" stroke="#4F8CFF" stroke-width="1" />
+      </g>
+      <text x="50" y="25" font-size="13" font-weight="600" fill="#4F8CFF">Distributed Systems</text>
+    </g>
+
+    <!-- Node 1: RedisLite -->
+    <a xlink:href="https://github.com/Dhruva-Aher/RedisLite" target="_blank">
+      <g transform="translate(35, 95)">
+        <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg cycle-border-1 hover-border" />
+        <rect width="4" height="30" rx="2" fill="#4F8CFF" x="15" y="17.5" opacity="0.7" />
+        <text x="35" y="30" class="node-text-title">RedisLite</text>
+        <text x="35" y="48" class="node-text-desc">In-memory key-value store</text>
+        <use href="#link-icon" x="220" y="22" opacity="0.7" />
+      </g>
+    </a>
+
+    <!-- Node 2: Aura -->
+    <a xlink:href="https://github.com/Dhruva-Aher/Aura" target="_blank">
+      <g transform="translate(35, 175)">
+        <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg cycle-border-2 hover-border" />
+        <rect width="4" height="30" rx="2" fill="#4F8CFF" x="15" y="17.5" opacity="0.7" />
+        <text x="35" y="30" class="node-text-title">Aura</text>
+        <text x="35" y="48" class="node-text-desc">Distributed task scheduler</text>
+        <use href="#link-icon" x="220" y="22" opacity="0.7" />
+      </g>
+    </a>
+
+    <!-- Node 3: FlowBoard -->
+    <a xlink:href="https://github.com/Dhruva-Aher/FlowBoard" target="_blank">
+      <g transform="translate(35, 255)">
+        <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg cycle-border-3 hover-border" />
+        <rect width="4" height="30" rx="2" fill="#4F8CFF" x="15" y="17.5" opacity="0.7" />
+        <text x="35" y="30" class="node-text-title">FlowBoard</text>
+        <text x="35" y="48" class="node-text-desc">Real-time kanban system</text>
+        <use href="#link-icon" x="220" y="22" opacity="0.7" />
+      </g>
+    </a>
+  </g>
+
+  <!-- ==================== CROSS-COLUMN CONNECTORS ==================== -->
+  <path d="M420 250 L480 250" stroke="#8B949E" stroke-width="1" fill="none" opacity="0.2" class="dash-line" />
+  <path d="M420 330 C450 330 450 250 480 250" stroke="#8B949E" stroke-width="1" fill="none" opacity="0.2" class="dash-line" />
+
+  <!-- ==================== RIGHT COLUMN: AI & Applications ==================== -->
+  <g transform="translate(480, 120)">
+    <!-- Category Container -->
+    <rect width="320" height="350" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    
+    <!-- Connecting lines (behind nodes) -->
+    <path d="M160 50 L160 215" stroke="#a371f7" stroke-width="1.5" fill="none" opacity="0.3" class="dash-line" />
+    <path d="M160 145 L300 145" stroke="#a371f7" stroke-width="1" fill="none" opacity="0.2" class="dash-line-fast" />
+    
+    <!-- Category Header -->
+    <g transform="translate(60, 20)" class="pulse-glow">
+      <rect width="200" height="40" rx="20" fill="#0D1117" stroke="#a371f7" stroke-width="1.5" opacity="0.8" />
+      <g transform="translate(20, 12)">
+        <!-- AI/Diamond Icon -->
+        <rect x="8" y="2" width="10" height="10" fill="none" stroke="#a371f7" stroke-width="1.5" transform="rotate(45 13 7)" />
+        <circle cx="13" cy="7" r="2" fill="#a371f7" />
+      </g>
+      <text x="50" y="25" font-size="13" font-weight="600" fill="#a371f7">AI &amp; Applications</text>
+    </g>
+
+    <!-- Node 1: JusticeQueue -->
+    <a xlink:href="https://github.com/Dhruva-Aher/JusticeQueue" target="_blank">
+      <g transform="translate(35, 95)">
+        <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg hover-border" />
+        <rect width="4" height="30" rx="2" fill="#a371f7" x="15" y="17.5" opacity="0.7" />
+        <text x="35" y="30" class="node-text-title">JusticeQueue</text>
+        <text x="35" y="48" class="node-text-desc">AI-powered legal assistant</text>
+        <use href="#link-icon" x="220" y="22" opacity="0.7" />
+      </g>
+    </a>
+
+    <!-- Node 2: PRBeliefs -->
+    <a xlink:href="https://github.com/Dhruva-Aher/PRBeliefs" target="_blank">
+      <g transform="translate(35, 175)">
+        <rect width="250" height="65" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5" class="card-bg hover-border" />
+        <rect width="4" height="30" rx="2" fill="#a371f7" x="15" y="17.5" opacity="0.7" />
+        <text x="35" y="30" class="node-text-title">PRBeliefs</text>
+        <text x="35" y="48" class="node-text-desc">PR review intelligence</text>
+        <use href="#link-icon" x="220" y="22" opacity="0.7" />
+      </g>
+    </a>
+
+    <!-- Empty/Future space placeholder for visual balance -->
+    <g transform="translate(35, 255)">
+      <rect width="250" height="65" rx="10" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+      <text x="125" y="37" font-size="12" fill="#8B949E" text-anchor="middle" opacity="0.6">Future Projects</text>
+    </g>
+  </g>
+  
+  <!-- Subtle decorative elements -->
+  <circle cx="100" cy="120" r="3" fill="#30363D" />
+  <circle cx="800" cy="120" r="3" fill="#30363D" />
+  <circle cx="100" cy="470" r="3" fill="#30363D" />
+  <circle cx="800" cy="470" r="3" fill="#30363D" />
+
+</svg>
