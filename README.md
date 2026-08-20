@@ -1,5 +1,5 @@
 <!-- GitHub Profile README — github.com/Dhruva-Aher -->
-<!-- LAST_UPDATED -->Last updated: August 19, 2026<!-- /LAST_UPDATED -->
+<!-- LAST_UPDATED -->Last updated: August 20, 2026<!-- /LAST_UPDATED -->
 
 <div align="center">
 <img src="./assets/hero.svg" width="900" alt="Dhruva Aher — Software Engineer" />
