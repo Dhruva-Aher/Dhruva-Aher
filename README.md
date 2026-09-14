@@ -44,7 +44,7 @@
 <h3 style="margin-top: 0; color: #FFFFFF;">Languages and Tools</h3>
 <br>
 <div align="center">
-<img src="https://skillicons.dev/icons?i=go,python,java,c,javascript,typescript,postgres,redis,mongodb,docker,kubernetes,aws,gcp,terraform,fastapi,react,nextjs,githubactions,git,linux,bash&theme=dark" alt="Languages and Tools" />
+<img src="https://skillicons.dev/icons?i=go,python,java,c,javascript,typescript,postgres,redis,mongodb,docker,kubernetes,aws,gcp,terraform,fastapi,react,nextjs,githubactions,git,linux,bash&theme=d[...]">
 </div>
 </td>
 </tr>
@@ -70,9 +70,7 @@
 </table>
 <p>A lightweight, Redis-compatible in-memory data store in Go implementing RESP protocol over raw TCP. Achieved <b>75K+ ops/sec</b> with sub-millisecond P95 latency.</p>
 <p>
-<span style="color: #00ADD8;">●</span> <sub>Go</sub> &nbsp;&nbsp;&nbsp;
-<sub>★ 12</sub> &nbsp;&nbsp;&nbsp;
-<sub>⑂ 4</sub>
+<span style="color: #00ADD8;">●</span> <sub>Go</sub>
 </p>
 </td>
 <td width="50%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
@@ -106,9 +104,7 @@
 </table>
 <p>AI-powered legal case management platform with 13-step NLP/IR pipeline using natural language processing and LLM tool calling on GCP Vertex AI.</p>
 <p>
-<span style="color: #F7DF1E;">●</span> <sub>JavaScript / Next.js</sub> &nbsp;&nbsp;&nbsp;
-<sub>★ 15</sub> &nbsp;&nbsp;&nbsp;
-<sub>⑂ 3</sub>
+<span style="color: #F7DF1E;">●</span> <sub>JavaScript / Next.js</sub>
 </p>
 </td>
 <td width="50%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
@@ -124,9 +120,7 @@
 </table>
 <p>Real-time collaborative project management SaaS platform with isolated workspaces, role-based access control, and WebSockets live editing.</p>
 <p>
-<span style="color: #3178C6;">●</span> <sub>TypeScript / FastAPI</sub> &nbsp;&nbsp;&nbsp;
-<sub>★ 9</sub> &nbsp;&nbsp;&nbsp;
-<sub>⑂ 2</sub>
+<span style="color: #3178C6;">●</span> <sub>TypeScript / FastAPI</sub>
 </p>
 </td>
 </tr>
@@ -144,9 +138,7 @@
 </table>
 <p>GitHub Marketplace app performing automated code reviews by dispatching parallel workers via Redis-backed async queues and LLaMA 3.3 70B.</p>
 <p>
-<span style="color: #3572A5;">●</span> <sub>Python</sub> &nbsp;&nbsp;&nbsp;
-<sub>★ 14</sub> &nbsp;&nbsp;&nbsp;
-<sub>⑂ 5</sub>
+<span style="color: #3572A5;">●</span> <sub>Python</sub>
 </p>
 </td>
 <td width="50%" valign="top" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 18px;">
@@ -162,9 +154,7 @@
 </table>
 <p>ETL data pipeline and analytics dashboard processing <b>810K+ FEMA disaster records</b> across 3,200+ counties. Deployed on AWS with Terraform.</p>
 <p>
-<span style="color: #3572A5;">●</span> <sub>Python / AWS</sub> &nbsp;&nbsp;&nbsp;
-<sub>★ 11</sub> &nbsp;&nbsp;&nbsp;
-<sub>⑂ 3</sub>
+<span style="color: #3572A5;">●</span> <sub>Python / AWS</sub>
 </p>
 </td>
 </tr>
@@ -183,23 +173,23 @@
 
 <!-- ROW 1: GitHub Stats (Rank Hidden) + Most Used Languages -->
 <div align="center">
-<img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&hide_rank=true&bg_color=0d1117&title_color=4f8cff&icon_color=4f8cff&text_color=8b949e" alt="GitHub Stats" />
+<img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=Dhruva-Aher&show_icons=true&theme=github_dark&hide_border=true&hide_rank=true&bg_color=0d1117&title_color=4f8cff&ic[...]">
 &nbsp;&nbsp;
-<img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4f8cff&text_color=8b949e" alt="Most Used Languages" />
+<img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Dhruva-Aher&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4f8cff&text_co[...]">
 </div>
 
 <br><br>
 
 <!-- ROW 2: Streak Stats -->
 <div align="center">
-<img width="860" src="https://streak-stats.demolab.com/?user=Dhruva-Aher&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=4F8CFF&fire=4F8CFF&currStreakNum=E6EDF3" alt="GitHub Streak Stats" />
-</div>
+<img width="860" src="https://streak-stats.demolab.com/?user=Dhruva-Aher&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=4F8CFF&fire=4F8CFF&currStreakNum=E6EDF3" alt=[...]
+></div>
 
 <br><br>
 
 <!-- ROW 3: Contribution Activity Graph -->
 <div align="center">
-<img width="860" src="https://github-readme-activity-graph.vercel.app/graph?username=Dhruva-Aher&theme=github-dark&bg_color=0d1117&hide_border=true&color=4f8cff&line=4f8cff&point=e6edf3" alt="Contribution Graph" />
+<img width="860" src="https://github-readme-activity-graph.vercel.app/graph?username=Dhruva-Aher&theme=github-dark&bg_color=0d1117&hide_border=true&color=4f8cff&line=4f8cff&point=e6edf3" alt="Con[...]">
 </div>
 </td>
 </tr>
