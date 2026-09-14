@@ -89,8 +89,6 @@
 <p>Distributed task orchestration platform supporting priority scheduling, crash recovery, and worker coordination across <b>20,000+ queued tasks</b>.</p>
 <p>
 <span style="color: #3178C6;">●</span> <sub>TypeScript</sub> &nbsp;&nbsp;&nbsp;
-<sub>★ 18</sub> &nbsp;&nbsp;&nbsp;
-<sub>⑂ 6</sub>
 </p>
 </td>
 </tr>
