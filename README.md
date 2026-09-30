@@ -22,7 +22,7 @@ I build systems where failure modes are explicit: leases & crash recovery, fail-
 |---|---------|----------------|-------|
 | 1 | **[Aura](https://github.com/Dhruva-Aher/Aura)** · [demo](https://aurasys.vercel.app) | Distributed job queue — leases, fences, Postgres recovery, backpressure | **303.72 jobs/min**, P95 **7.40s**, **6,000** jobs restored in **1,843 ms**, **224** tests |
 | 2 | **[FlowBoard](https://github.com/Dhruva-Aher/FlowBoard)** · [demo](https://flowboard-iota-blond.vercel.app) | Multi-tenant SaaS — JWT/RBAC + WS membership fail-closed | Non-member **403** / WS **4003**, **68** pytest, live Vercel+Neon |
-| 3 | **[redislite](https://github.com/Dhruva-Aher/redislite)** | From-scratch Redis subset — RESP/TCP, TTL, AOF | Local bench **74,498 ops/sec**, P95 **0.20 ms**, CI `go test` |
+| 3 | **[redislite](https://github.com/Dhruva-Aher/redislite)** | From-scratch Redis subset — RESP/TCP, TTL, AOF | Local bench **78,086 ops/sec**, P95 **0.21 ms**, CI `go test` |
 | 4 | **[Underwrite](https://github.com/Dhruva-Aher/UnderWrite)** | Fail-closed ML deploy gate — DataHub lineage → CI block | Deterministic authz; LLM never authorizes; sample outputs in-repo |
 | 5 | **[Receipts](https://github.com/Dhruva-Aher/receipts)** | Verifies agent *claims* vs repo evidence before merge | Reproducible FIX receipt; measured e2e **~10.2s** on fixture |
 | 6 | **[JusticeQueue](https://github.com/Dhruva-Aher/JusticeQueue)** · [demo](https://justicequeuelive.vercel.app) | Legal triage + Atlas Vector Search | Documented **32/60** cases improved with precedents |
@@ -54,7 +54,7 @@ Multi-tenant boards & docs with fail-closed JWT/RBAC and membership-gated WebSoc
 <td width="50%" valign="top">
 
 ### [redislite](https://github.com/Dhruva-Aher/redislite)
-Redis-compatible KV store in Go: RESP over TCP, TTL eviction, AOF. Local bench: **74,498 ops/sec**, P95 **0.20 ms**.
+Redis-compatible KV store in Go: RESP over TCP, TTL eviction, AOF. Local bench: **78,086 ops/sec**, P95 **0.21 ms**.
 <br/><sub>Go · Systems</sub>
 
 </td>
@@ -77,7 +77,7 @@ Verifies coding-agent completion claims against command re-runs and git evidence
 <td width="50%" valign="top">
 
 ### [JusticeQueue](https://github.com/Dhruva-Aher/JusticeQueue) · [Live](https://justicequeuelive.vercel.app)
-Legal triage with Gemini + MongoDB Atlas Vector Search. Documented audit: **32/60** cases improved with precedent retrieval.
+Legal triage with Gemini + MongoDB Atlas Vector Search. Live stats: **7/14** cases improved (**50%**); top **83→98** with precedent retrieval.
 <br/><sub>Next.js · MongoDB · Gemini</sub>
 
 </td>
