@@ -25,7 +25,7 @@ I build systems where failure modes are explicit: leases & crash recovery, fail-
 | 3 | **[redislite](https://github.com/Dhruva-Aher/redislite)** | From-scratch Redis subset — RESP/TCP, TTL, AOF | Local bench **78,086 ops/sec**, P95 **0.21 ms**, CI `go test` |
 | 4 | **[Underwrite](https://github.com/Dhruva-Aher/UnderWrite)** | Fail-closed ML deploy gate — DataHub lineage → CI block | Deterministic authz; LLM never authorizes; sample outputs in-repo |
 | 5 | **[Receipts](https://github.com/Dhruva-Aher/receipts)** | Verifies agent *claims* vs repo evidence before merge | Reproducible FIX receipt; measured e2e **~10.2s** on fixture |
-| 6 | **[JusticeQueue](https://github.com/Dhruva-Aher/JusticeQueue)** · [demo](https://justicequeuelive.vercel.app) | Legal triage + Atlas Vector Search | Documented **32/60** cases improved with precedents |
+| 6 | **[JusticeQueue](https://github.com/Dhruva-Aher/JusticeQueue)** · [demo](https://justicequeuelive.vercel.app) | Legal triage + Atlas Vector Search | Live stats: **7/14** improved (**50%**); top **83→98** |
 
 **Pin order on this profile (please match):** Aura → FlowBoard → redislite → UnderWrite → Receipts → JusticeQueue
 
