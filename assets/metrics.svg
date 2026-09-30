@@ -68,25 +68,25 @@
     <!-- Stat 1: Throughput -->
     <g transform="translate(25, 72)">
       <rect width="70" height="34" rx="8" fill="#0D1117" stroke="#4F8CFF" stroke-width="1" />
-      <text font-family="sans-serif" font-size="15" font-weight="800" fill="#4F8CFF" text-anchor="middle" x="35" y="22">75K+</text>
+      <text font-family="sans-serif" font-size="13" font-weight="800" fill="#4F8CFF" text-anchor="middle" x="35" y="22">74.5K</text>
       <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">OPS / SEC (RedisLite)</text>
-      <text class="stat-label" y="29" x="82">RESP protocol over TCP with P95 &lt; 1ms</text>
+      <text class="stat-label" y="29" x="82">Local bench · P95 0.20 ms · 10 clients × 1k cmds</text>
     </g>
 
-    <!-- Stat 2: Queued Tasks -->
+    <!-- Stat 2: Aura throughput -->
     <g transform="translate(25, 118)">
       <rect width="70" height="34" rx="8" fill="#0D1117" stroke="#28C840" stroke-width="1" />
-      <text font-family="sans-serif" font-size="15" font-weight="800" fill="#28C840" text-anchor="middle" x="35" y="22">20K+</text>
-      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">QUEUED TASKS (Aura)</text>
-      <text class="stat-label" y="29" x="82">Redis-backed concurrent worker orchestration</text>
+      <text font-family="sans-serif" font-size="13" font-weight="800" fill="#28C840" text-anchor="middle" x="35" y="22">~304</text>
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">JOBS / MIN (Aura)</text>
+      <text class="stat-label" y="29" x="82">Local proof snapshot · P95 queue wait 7.40s</text>
     </g>
 
-    <!-- Stat 3: Dataset Scale -->
+    <!-- Stat 3: Recovery -->
     <g transform="translate(25, 164)">
       <rect width="70" height="34" rx="8" fill="#0D1117" stroke="#FEBC2E" stroke-width="1" />
-      <text font-family="sans-serif" font-size="15" font-weight="800" fill="#FEBC2E" text-anchor="middle" x="35" y="22">810K+</text>
-      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">FEMA RECORDS (ETL)</text>
-      <text class="stat-label" y="29" x="82">Disaster relief analytics across 3,200+ counties</text>
+      <text font-family="sans-serif" font-size="13" font-weight="800" fill="#FEBC2E" text-anchor="middle" x="35" y="22">6K</text>
+      <text font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" x="82" y="14">RESTORED IN 1.8s (Aura)</text>
+      <text class="stat-label" y="29" x="82">Postgres→Redis reconcile after queue wipe</text>
     </g>
   </g>
 
