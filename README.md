@@ -9,7 +9,7 @@ I build systems where failure modes are explicit: leases & crash recovery, fail-
 
 | | |
 |--|--|
-| **Portfolio** | [dhruva-aher.vercel.app](https://dhruva-aher.vercel.app) |
+| **Portfolio** | [dhruva-aher.vercel.app](https://dhruvaaher.dev) |
 | **Email** | [dhruvaaher48@gmail.com](mailto:dhruvaaher48@gmail.com) |
 | **LinkedIn** | [linkedin.com/in/dhruva-aher](https://linkedin.com/in/dhruva-aher) |
 | **Stack** | TypeScript · Go · Python · Redis · PostgreSQL · FastAPI · React · Docker |
